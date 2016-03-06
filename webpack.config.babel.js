@@ -1,6 +1,6 @@
-var webpack = require('webpack');
+import webpack from 'webpack';
 
-module.exports = {
+export default {
   entry: [
     'webpack/hot/only-dev-server',
     'webpack-dev-server/client?http://localhost:8080',
@@ -8,7 +8,7 @@ module.exports = {
   ],
   output: {
     path: __dirname,
-    filename: "bundle.js"
+    filename: 'bundle.js'
   },
   historyApiFallback: true,
   plugins: [
@@ -18,7 +18,7 @@ module.exports = {
     loaders: [
       {
         test: /\.css$/,
-        loader: "style!css"
+        loader: 'style!css'
       },
       {
         test: /\.jsx?$/,
