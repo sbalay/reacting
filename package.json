@@ -1,0 +1,38 @@
+{
+  "name": "reacting",
+  "version": "0.0.1",
+  "description": "Playing around with React",
+  "main": "bundle.js",
+  "scripts": {
+    "lint": "eslint . --ext .js --ext .jsx || true",
+    "start": "webpack-dev-server --hot --inline --progress --no-info --colors --compress"
+  },
+  "author": "Sebastián Balay <snbalay@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.12.0",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-react": "^5.2.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "glob": "^7.0.4",
+    "node-sass": "^3.7.0",
+    "postcss-loader": "^0.9.1",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
