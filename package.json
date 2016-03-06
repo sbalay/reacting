@@ -4,7 +4,8 @@
   "description": "Playing around with React",
   "main": "bundle.js",
   "scripts": {
-    "lint": "eslint . --ext .js --ext .jsx || true"
+    "lint": "eslint . --ext .js --ext .jsx || true",
+    "start": "webpack-dev-server --progress --inline --hot"
   },
   "author": "Sebastián Balay <snbalay@gmail.com>",
   "license": "MIT",

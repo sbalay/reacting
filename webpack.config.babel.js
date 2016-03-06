@@ -2,8 +2,6 @@ import webpack from 'webpack';
 
 export default {
   entry: [
-    'webpack/hot/only-dev-server',
-    'webpack-dev-server/client?http://localhost:8080',
     './entry.js'
   ],
   output: {
@@ -13,8 +11,7 @@ export default {
   devtool: '#inline-source-map',
   historyApiFallback: true,
   plugins: [
-    new webpack.NoErrorsPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.NoErrorsPlugin()
   ],
   module: {
     loaders: [
@@ -24,7 +21,8 @@ export default {
       },
       {
         test: /\.jsx?$/,
-        loaders: ['babel', 'eslint']
+        loaders: ['babel', 'eslint'],
+        exclude: /node_modules/
       }
     ]
   }
