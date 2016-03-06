@@ -1,1 +1,1 @@
-module.exports = "It works from content.js. WATCHEDDDD";
+export default "It works from content.js. WATCHED";
