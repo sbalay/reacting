@@ -1,4 +1,10 @@
 import style from "./style.css";
-import content from "./content.js";
+import Hello from './component.jsx';
 
-document.write(content);
+import React from 'react';
+
+main();
+
+function main() {
+    React.render(<Hello />, document.getElementById('app'));
+}
