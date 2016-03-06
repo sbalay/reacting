@@ -1,10 +1,10 @@
-import style from "./style.css";
+import style from './style.css';  // eslint-disable-line
 import Hello from './component.jsx';
 
 import React from 'react';
 
-main();
-
 function main() {
-    React.render(<Hello />, document.getElementById('app'));
+  React.render(<Hello />, document.getElementById('app'));
 }
+
+main();

@@ -22,7 +22,7 @@ module.exports = {
       },
       {
         test: /\.jsx?$/,
-        loader: 'babel'
+        loaders: ['babel', 'eslint']
       }
     ]
   }
