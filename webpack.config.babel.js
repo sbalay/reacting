@@ -10,6 +10,7 @@ export default {
     path: __dirname,
     filename: 'bundle.js'
   },
+  devtool: '#inline-source-map',
   historyApiFallback: true,
   plugins: [
     new webpack.HotModuleReplacementPlugin()
