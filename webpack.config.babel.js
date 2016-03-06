@@ -2,7 +2,8 @@ import webpack from 'webpack';
 
 export default {
   entry: [
-    './entry.js'
+    './entry.js',
+    './styles.js'
   ],
   output: {
     path: __dirname,
@@ -17,7 +18,11 @@ export default {
     loaders: [
       {
         test: /\.css$/,
-        loader: 'style!css'
+        loaders: ['style', 'css']
+      },
+      {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
       },
       {
         test: /\.jsx?$/,

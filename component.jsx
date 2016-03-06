@@ -1,6 +1,6 @@
 import React from 'react';
 
-import content from './content.js';
+import content from './content';
 
 export default class Hello extends React.Component {
   render() {
