@@ -13,6 +13,7 @@ export default {
   devtool: '#inline-source-map',
   historyApiFallback: true,
   plugins: [
+    new webpack.NoErrorsPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ],
   module: {
