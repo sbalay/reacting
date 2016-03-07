@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 
-import style from './style.css';
-import style2 from './style2.scss';
+import baseStyle from './common/styles/base.css';
 
 /* eslint-enable no-unused-vars */

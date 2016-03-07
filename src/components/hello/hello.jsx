@@ -1,9 +1,9 @@
 import React from 'react';
 
-import content from './content';
+import style from './hello.scss';  // eslint-disable-line no-unused-vars
 
 export default class Hello extends React.Component {
   render() {
-    return <h1>{ content }</h1>;
+    return <h1>Hello!</h1>;
   }
 }

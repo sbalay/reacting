@@ -1,13 +1,14 @@
 import webpack from 'webpack';
+import path from 'path';
 
 export default {
   entry: [
-    './entry.js',
-    './styles.js'
+    './src/main.js',
+    './src/styles.js'
   ],
   output: {
-    path: __dirname,
-    filename: 'bundle.js'
+    filename: 'bundleeee.js',
+    path: __dirname
   },
   devtool: '#inline-source-map',
   historyApiFallback: true,
