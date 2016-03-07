@@ -7,8 +7,9 @@ export default {
     './src/styles.js'
   ],
   output: {
-    filename: 'bundleeee.js',
-    path: __dirname
+    filename: 'bundle.js',
+    path: path.join(__dirname, 'build'),
+    publicPath: '/build/'
   },
   devtool: '#inline-source-map',
   historyApiFallback: true,
