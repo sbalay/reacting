@@ -1,5 +1,8 @@
 import webpack from 'webpack';
 import path from 'path';
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
+
+const cssExtract = new ExtractTextPlugin('styles.css');
 
 export default {
   entry: [
@@ -14,17 +17,18 @@ export default {
   devtool: '#inline-source-map',
   historyApiFallback: true,
   plugins: [
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    cssExtract
   ],
   module: {
     loaders: [
       {
         test: /\.css$/,
-        loaders: ['style', 'css']
+        loader: cssExtract.extract(['css'])
       },
       {
         test: /\.scss$/,
-        loaders: ['style', 'css', 'sass']
+        loader: cssExtract.extract(['css', 'sass'])
       },
       {
         test: /\.jsx?$/,
@@ -33,4 +37,4 @@ export default {
       }
     ]
   }
-};
+}
