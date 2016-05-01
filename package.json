@@ -5,7 +5,7 @@
   "main": "bundle.js",
   "scripts": {
     "lint": "eslint . --ext .js --ext .jsx || true",
-    "start": "webpack-dev-server --progress --inline --hot"
+    "start": "webpack-dev-server --hot --inline --progress --no-info --colors --compress"
   },
   "author": "Sebastián Balay <snbalay@gmail.com>",
   "license": "MIT",
