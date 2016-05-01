@@ -1,9 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export class App extends Component {
-  render() {
-    return (
-      <div></div>
-    );
-  }
+import Header from '../Header/Header';
+
+export default function App (props) {
+  return (
+    <div>
+      <Header />
+      { props.children }
+    </div>
+  );
 }
+
+App.propTypes = {
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.arrayOf(React.PropTypes.node),
+    React.PropTypes.node
+  ])
+};
