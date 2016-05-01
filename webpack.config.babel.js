@@ -1,13 +1,14 @@
 import webpack from 'webpack';
 import path from 'path';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import glob from 'glob';
 
 const cssExtract = new ExtractTextPlugin('styles.css');
 
 export default {
   entry: [
     './src/main.js',
-    './src/styles.js'
+    ...glob.sync('./src/**/*.scss')
   ],
   output: {
     filename: 'bundle.js',
@@ -34,6 +35,10 @@ export default {
         test: /\.jsx?$/,
         loaders: ['babel', 'eslint'],
         exclude: /node_modules/
+      },
+      {
+        test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
+        loader: 'file'
       }
     ]
   }
