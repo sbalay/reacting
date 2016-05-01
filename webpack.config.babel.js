@@ -37,7 +37,7 @@ export default {
       },
       {
         test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
-        loader: 'file'
+        loader: 'url?limit=10000'
       }
     ]
   }
