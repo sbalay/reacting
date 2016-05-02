@@ -1,0 +1,51 @@
+@import '../../styles/colors';
+
+$book-detail-margin-right: 70px;
+$book-detail-width: 130px;
+
+
+.wb-book-cover,
+.wb-book-cover-default {
+  height: 180px;
+  width: $book-detail-width;
+}
+
+.wb-book-cover-default {
+  align-items: center;
+  background: $gray;
+  display: flex;
+  justify-content: center;
+
+  img {
+    content: url('../../assets/default_book.svg');
+    height: 75px;
+    width: 75px;
+  }
+}
+
+.wb-book-details-container {
+  margin-right: $book-detail-margin-right;
+  margin-bottom: 60px;
+}
+
+.wb-book-attrs {
+  margin-top: 10px;
+  max-width: $book-detail-width;
+
+  strong,
+  span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  strong {
+    font-size: 14px;
+  }
+
+  span {
+    color: $dark-gray;
+    font-size: 12px;
+  }
+}

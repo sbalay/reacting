@@ -1,12 +1,17 @@
+@import '../BookDetail/BookDetail';
+
 .wb-books-dashboard {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 30px 0;
+  padding: 30px 15%;
+  padding-right: calc(15% - #{$book-detail-margin-right});
 }
 
 .wb-books-container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 30%;
+  list-style: none;
+  margin-top: 65px;
+  padding-left: 0;
 }

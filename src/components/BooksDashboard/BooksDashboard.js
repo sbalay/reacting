@@ -18,8 +18,7 @@ export default class BooksDashboard extends Component {
         {
           author: 'qweqwe123123zxczx',
           id: '11',
-          imageUrl: `https://images.contentful.com/256tjdsmm689/2T0QeKcvR6MSsckuKoYIwS/
-                     b57d12107fc5eb635e294ed1c76cbbac/feature-gettyimages.jpg`,
+          imageUrl: 'https://pbs.twimg.com/media/ChRabBdU4AA4jw4.jpg',
           title: 'asd123'
         },
         {
@@ -37,22 +36,25 @@ export default class BooksDashboard extends Component {
         {
           author: 'qweqwe123123zxczx',
           id: '11111',
-          imageUrl: `http://static.ddmcdn.com/gif/storymaker-best-hubble-space
-                     telescope-images-20092-514x268.jpg`,
-          title: 'asd123'
+          imageUrl: 'http://im.rediff.com/news/2016/mar/01smith1.jpg',
+          title: 'asd123asd123asd123asd123asd123asd123asd123'
         },
         {
-          author: 'qweqwe123123zxczx',
+          author: 'qweqwe123123zxczxqweqwe123123zxczxqweqwe123123zxczxqweqwe123123zxczx',
           id: '111111',
-          imageUrl: `http://i.dailymail.co.uk/i/pix/2015/06/26/08/
-                     29F51C6A00000578-3139358-image-m-7_1435303227646.jpg`,
           title: 'asd123'
         },
         {
           author: 'qweqwe123123zxczx',
           id: '1111111',
-          imageUrl: 'https://www.planwallpaper.com/static/images/Frozen-Logo-Symbol-HD-Images.jpg',
+          imageUrl: 'https://pbs.twimg.com/media/ChOTkRUU8AED4Lp.jpg',
           title: 'asd123'
+        },
+        {
+          author: 'qweqwe123123zxczxqweqwe123123zxczxqweqwe123123zxczx',
+          id: '11111111',
+          imageUrl: 'http://www.gettyimages.com/landing/assets/static_content/home/info-tabs1.jpg',
+          title: 'asd123asd123asd123asd123'
         }
       ]
     };
