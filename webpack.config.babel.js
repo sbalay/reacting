@@ -1,7 +1,7 @@
-import webpack from 'webpack';
 import path from 'path';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import glob from 'glob';
+import autoprefixer from 'autoprefixer';
 
 const cssExtract = new ExtractTextPlugin('styles.css');
 
@@ -24,11 +24,11 @@ export default {
     loaders: [
       {
         test: /\.css$/,
-        loader: cssExtract.extract(['css'])
+        loader: cssExtract.extract(['css', 'postcss'])
       },
       {
         test: /\.scss$/,
-        loader: cssExtract.extract(['css', 'sass'])
+        loader: cssExtract.extract(['css', 'postcss', 'sass'])
       },
       {
         test: /\.jsx?$/,
@@ -40,5 +40,8 @@ export default {
         loader: 'url?limit=10000'
       }
     ]
+  },
+  postcss () {
+    return [autoprefixer];
   }
 }
