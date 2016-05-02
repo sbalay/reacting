@@ -1,8 +1,26 @@
-$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
 @import 'colors';
 
 body {
   background: $white;
+}
+
+.wb-control-item {
+  background: $background-gray;
+  border: 0;
+  border-radius: 0;
+  flex: 1 1 auto;
+  height: 38px;
+  max-width: 240px;
+  outline: 0;
+
+  &[type='text'] {
+    padding: 0 10px;
+
+    &::placeholder {
+      font-style: italic;
+    }
+  }
 }

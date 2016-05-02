@@ -1,0 +1,22 @@
+@import './colors';
+
+.dropdown {
+  display: flex;
+  flex: 1 1 auto;
+  max-width: 240px;
+
+  .dropdown-toggle {
+    text-align: left;
+
+    > span:last-child {
+      float: right;
+      margin-top: 5px;
+    }
+
+    .caret {
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px dashed $mid-gray;
+    }
+  }
+}

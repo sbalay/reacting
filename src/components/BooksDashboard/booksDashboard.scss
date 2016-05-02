@@ -1,0 +1,12 @@
+.wb-books-dashboard {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+}
+
+.wb-books-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 30%;
+}
