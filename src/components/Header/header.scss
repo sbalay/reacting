@@ -4,15 +4,24 @@ $header-height: 100px;
 
 .wb-header {
   align-items: center;
+  background: $white;
   box-shadow: 0 6px 24px 0 $gray;
   display: flex;
   height: $header-height;
   padding: 0 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 1001;
 
   .wb-header-icon {
     &:not(:first-child):not(:last-child) {
       margin-right: 30px;
     }
+  }
+
+  + * {
+    position: relative;
+    top: $header-height;
   }
 }
 
