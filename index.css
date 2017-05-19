@@ -78,3 +78,7 @@ body {
   clip-path: circle(100% at 50% 50%);
   /*clip-path: polygon(50% 19%, 0 76%, 100% 76%);*/
 }
+
+/* example: https://css-tricks.com/almanac/properties/c/clip/ */
+/* example: http://bennettfeely.com/clippy/ */
+/* example: https://developer.mozilla.org/en/docs/Web/CSS/clip-path */
