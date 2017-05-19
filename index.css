@@ -17,3 +17,28 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.difuminado {
+  max-height: 0;
+  max-width: 0;
+  transition: max-height 0.15s ease-out;
+  background-color: blue;
+}
+
+.circulo {
+  max-height: 0;
+  max-width: 0;
+  transition: max-height 0.15s ease-out;
+  border-radius: 200px;
+  background-color: red;
+}
+
+.difuminado.active {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.circulo.active {
+  max-height: 200px;
+  max-width: 200px;
+}
