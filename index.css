@@ -5,6 +5,7 @@ body {
 
 .container {
   background-image: url('bosque.jpg');
+  background-size: cover;
   width: 500px;
   height: 500px;
   position: relative;
@@ -56,8 +57,24 @@ body {
   transition: border-radius 0.8s;
   background: transparent;
   background-image: url('nieve.jpg');
+  background-size: cover;
 }
 
 .circle.ready {
   border-radius: 0;
+}
+
+.harry {
+  width: 280px;
+  height: 280px;
+  background: url('harry.jpg');
+  background-size: cover;
+  transition: 1s cubic-bezier(1, -1, 0, 2);
+  /*clip-path: polygon(50% 5%, 0% 100%, 100% 100%);*/
+  clip-path: circle(50% at 50% 50%);
+}
+
+.harry:hover {
+  clip-path: circle(100% at 50% 50%);
+  /*clip-path: polygon(50% 19%, 0 76%, 100% 76%);*/
 }
