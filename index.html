@@ -4,21 +4,40 @@
     <meta charset="utf-8">
     <title>tururu</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="animate.css">
   </head>
   <body>
     <script>
       window.triggerAnimation = function () {
-        document.querySelector('.circulo').classList.toggle('active');
-        document.querySelector('.difuminado').classList.toggle('active');
+        var circles = Array.prototype.slice.call(document.querySelectorAll('.circle'));
+        circles.forEach(function (circle, index) {
+          console.log(index);
+          if (circle.classList.contains('hidden')) {
+            var isContent = circle.classList.contains('content');
+            setTimeout(function () {
+              setTimeout(function () {
+                circle.classList.toggle('ready');
+              }, 100);
+              circle.classList.toggle('animated');
+              circle.classList.toggle('zoomIn');
+              circle.classList.toggle('hidden');
+            }, index * (index === 3 ? 85 : 100));
+          } else {
+            circle.classList.toggle('ready');
+            circle.classList.toggle('animated');
+            circle.classList.toggle('zoomIn');
+            circle.classList.toggle('hidden');
+          }
+        });
+        document.querySelector('.blur').classList.toggle('hidden');
       }
     </script>
-    <div class="container" id="127">
-      <img src="bosque.jpg" alt="" class="imagen" onclick='triggerAnimation()'>
-      <div class="difuminado">
-        <div class="circulo">
-
-        </div>
-      </div>
+    <div class="container" onclick='triggerAnimation()'>
+      <div class="hidden blur"></div>
+      <div class="hidden circle"></div>
+      <div class="hidden circle circle-1"></div>
+      <div class="hidden circle circle-2"></div>
+      <div class="hidden circle circle-3"></div>
     </div>
   </body>
 </html>

@@ -3,42 +3,61 @@ body {
   padding: 0;
 }
 
-.imagen {
+.container {
+  background-image: url('bosque.jpg');
   width: 500px;
   height: 500px;
-  padding: 10px;
-  border: 1px dashed black;
-}
-
-.container {
-  width: 100vw;
-  height: 100vh;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.difuminado {
-  max-height: 0;
-  max-width: 0;
-  transition: max-height 0.15s ease-out;
-  background-color: blue;
+.hidden {
+  display: none !important;
 }
 
-.circulo {
-  max-height: 0;
-  max-width: 0;
-  transition: max-height 0.15s ease-out;
-  border-radius: 200px;
-  background-color: red;
+.image {
+  width: 100%;
+  height: 100%;
 }
 
-.difuminado.active {
-  max-height: 200px;
-  max-width: 200px;
+.blur {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.circulo.active {
-  max-height: 200px;
-  max-width: 200px;
+.circle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: border-radius 1s;
+}
+
+.circle-1 {
+  height: calc(100% - 25px);
+  width: calc(100% - 25px);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.circle-2 {
+  height: calc(100% - 50px);
+  width: calc(100% - 50px);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.circle-3 {
+  height: 100%;
+  width: 100%;
+  transition: border-radius 0.8s;
+  background: transparent;
+  background-image: url('nieve.jpg');
+}
+
+.circle.ready {
+  border-radius: 0;
 }
