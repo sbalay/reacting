@@ -6,6 +6,8 @@ body {
 .imagen {
   width: 500px;
   height: 500px;
+  padding: 10px;
+  border: 1px dashed black;
 }
 
 .container {
